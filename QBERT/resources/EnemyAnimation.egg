@@ -1,0 +1,27 @@
+<CoordinateSystem> { Z-Up }
+
+<Comment> {
+  "MaxEggPlugin nul.max -a chan 'C:\Documents and Settings\etc-guest\Desktop\EnemyAnimation.egg'"
+}
+<Table> {
+  <Bundle> EnemyBall {
+    <Table> "<skeleton>" {
+      <Table> BoneEnemy {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 88.7546 } }
+          <S$Anim> x { <V> { 0.00432426 } }
+          <S$Anim> y { <V> { -0.0461255 } }
+          <S$Anim> z {
+            <V> {
+              0.34313 0.29025 0.237369 0.272405 0.364774 0.495364
+              0.645064 0.794765 0.925355 1.01772 1.05276 0.841362
+              0.448766 0.237369 0.29025 0.34313
+            }
+          }
+        }
+      }
+    }
+  }
+}

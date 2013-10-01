@@ -1,0 +1,31 @@
+<CoordinateSystem> { Z-Up }
+
+<Comment> {
+  "MaxEggPlugin nul.max -a chan 'C:\NHSGA work\Bejeweled Jewels\bejeweled\ClockhandAnim.egg'"
+}
+<Table> {
+  <Bundle> bejeweled_extruded03 {
+    <Table> "<skeleton>" {
+      <Table> Bone01 {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h {
+            <V> {
+              92.333 83.1881 74.0431 64.8981 55.7532 46.6082 37.4632
+              28.3183 19.1733 10.0284 0.883396 -8.26157 -17.4065
+              -26.5515 -35.6965 -44.8414 -53.9864 -63.1313 -72.2763
+              -81.4213 -90.5662 -99.4904 -108.415 -117.339 -126.263
+              -135.187 -144.111 -153.036 -161.96 -170.884 -179.808
+              171.267 162.343 153.419 144.495 135.571 126.646 117.722
+              108.798 99.8737 90.9495
+            }
+          }
+          <S$Anim> x { <V> { -85.5222 } }
+          <S$Anim> y { <V> { 18.6286 } }
+          <S$Anim> z { <V> { 13.6134 } }
+        }
+      }
+    }
+  }
+}

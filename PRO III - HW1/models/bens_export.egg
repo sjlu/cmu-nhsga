@@ -1,0 +1,53 @@
+<CoordinateSystem> { Z-Up }
+
+<Comment> {
+  "MaxEggPlugin nul.max -a chan 'C:\Documents and Settings\bfeigin\Desktop\bens_export.egg'"
+}
+<Table> {
+  <Bundle> dmrivers_creature {
+    <Table> "<skeleton>" {
+      <Table> Bone_base {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 90 } }
+          <S$Anim> p { <V> { 1.59112 } }
+          <S$Anim> r { <V> { -90 } }
+          <S$Anim> x { <V> { -0.212416 } }
+          <S$Anim> z { <V> { 3.11163 } }
+        }
+        <Table> Bone01 {
+          <Xfm$Anim_S$> xform {
+            <Scalar> fps { 30 }
+            <Char*> order { srpht }
+            <S$Anim> h {
+              <V> {
+                -4.83279 -7.04937 -11.0873 -16.1561 -19.4036 -5.17893
+                15.8883 29.034 35.3371 14.5595 -6.21806
+              }
+            }
+            <S$Anim> p { <V> { 0.469915 } }
+            <S$Anim> r { <V> { -0.37234 } }
+            <S$Anim> x { <V> { -0.396006 } }
+            <S$Anim> y { <V> { 27.0825 } }
+          }
+          <Table> Bone_head {
+            <Xfm$Anim_S$> xform {
+              <Scalar> fps { 30 }
+              <Char*> order { srpht }
+              <S$Anim> h {
+                <V> {
+                  -8.15244 -8.15243 -8.15244 -8.15243 -8.15244 -8.15244
+                  -8.15243 -33.1524 -58.1524 -33.1524 -8.15244
+                }
+              }
+              <S$Anim> p { <V> { -0.000109259 } }
+              <S$Anim> x { <V> { 34.5342 } }
+              <S$Anim> y { <V> { -26.3346 } }
+            }
+          }
+        }
+      }
+    }
+  }
+}

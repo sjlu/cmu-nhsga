@@ -1,0 +1,182 @@
+<CoordinateSystem> { Z-Up }
+
+<Comment> {
+  "MaxEggPlugin nul.max -a model -o 'C:\Documents and Settings\rcomley\Desktop\tank\models\bullet.egg'"
+}
+<Group> tank {
+  <Dart> { 1 }
+  <Group> "Scene Root" {
+    <Group> Bullet {
+      <VertexPool> Bullet.verts {
+        <Vertex> 0 {
+          -2.58443 -206.478 71.4501
+          <UV> { 1 0 }
+          <Normal> { 0 1 4.37114e-008 }
+        }
+        <Vertex> 1 {
+          -2.58443 -206.478 74.4501
+          <UV> { 1 1 }
+          <Normal> { 0 1 4.37114e-008 }
+        }
+        <Vertex> 2 {
+          10.4156 -206.478 74.4501
+          <UV> { 0 1 }
+          <Normal> { 0 1 4.37114e-008 }
+        }
+        <Vertex> 3 {
+          10.4156 -206.478 71.4501
+          <UV> { 0 0 }
+          <Normal> { 0 1 4.37114e-008 }
+        }
+        <Vertex> 4 {
+          -2.58443 -226.478 71.4501
+          <UV> { 0 0 }
+          <Normal> { 0 -1 -4.37114e-008 }
+        }
+        <Vertex> 5 {
+          10.4156 -226.478 71.4501
+          <UV> { 1 0 }
+          <Normal> { 0 -1 -4.37114e-008 }
+        }
+        <Vertex> 6 {
+          10.4156 -226.478 74.4501
+          <UV> { 1 1 }
+          <Normal> { 0 -1 -4.37114e-008 }
+        }
+        <Vertex> 7 {
+          -2.58443 -226.478 74.4501
+          <UV> { 0 1 }
+          <Normal> { 0 -1 -4.37114e-008 }
+        }
+        <Vertex> 8 {
+          -2.58443 -206.478 71.4501
+          <UV> { 0 0 }
+          <Normal> { 0 4.37114e-008 -1 }
+        }
+        <Vertex> 9 {
+          10.4156 -206.478 71.4501
+          <UV> { 1 0 }
+          <Normal> { 0 4.37114e-008 -1 }
+        }
+        <Vertex> 10 {
+          10.4156 -226.478 71.4501
+          <UV> { 1 1 }
+          <Normal> { 0 4.37114e-008 -1 }
+        }
+        <Vertex> 11 {
+          -2.58443 -226.478 71.4501
+          <UV> { 0 1 }
+          <Normal> { 0 4.37114e-008 -1 }
+        }
+        <Vertex> 12 {
+          10.4156 -206.478 71.4501
+          <UV> { 0 0 }
+          <Normal> { 1 0 0 }
+        }
+        <Vertex> 13 {
+          10.4156 -206.478 74.4501
+          <UV> { 1 0 }
+          <Normal> { 1 0 0 }
+        }
+        <Vertex> 14 {
+          10.4156 -226.478 74.4501
+          <UV> { 1 1 }
+          <Normal> { 1 0 0 }
+        }
+        <Vertex> 15 {
+          10.4156 -226.478 71.4501
+          <UV> { 0 1 }
+          <Normal> { 1 0 0 }
+        }
+        <Vertex> 16 {
+          10.4156 -206.478 74.4501
+          <UV> { 0 0 }
+          <Normal> { 0 -4.37114e-008 1 }
+        }
+        <Vertex> 17 {
+          -2.58443 -206.478 74.4501
+          <UV> { 1 0 }
+          <Normal> { 0 -4.37114e-008 1 }
+        }
+        <Vertex> 18 {
+          -2.58443 -226.478 74.4501
+          <UV> { 1 1 }
+          <Normal> { 0 -4.37114e-008 1 }
+        }
+        <Vertex> 19 {
+          10.4156 -226.478 74.4501
+          <UV> { 0 1 }
+          <Normal> { 0 -4.37114e-008 1 }
+        }
+        <Vertex> 20 {
+          -2.58443 -206.478 74.4501
+          <UV> { 0 0 }
+          <Normal> { -1 0 0 }
+        }
+        <Vertex> 21 {
+          -2.58443 -206.478 71.4501
+          <UV> { 1 0 }
+          <Normal> { -1 0 0 }
+        }
+        <Vertex> 22 {
+          -2.58443 -226.478 71.4501
+          <UV> { 1 1 }
+          <Normal> { -1 0 0 }
+        }
+        <Vertex> 23 {
+          -2.58443 -226.478 74.4501
+          <UV> { 0 1 }
+          <Normal> { -1 0 0 }
+        }
+      }
+      <Polygon> {
+        <RGBA> { 0.4 1 0 1 }
+        <VertexRef> { 0 1 2 <Ref> { Bullet.verts } }
+      }
+      <Polygon> {
+        <RGBA> { 0.4 1 0 1 }
+        <VertexRef> { 2 3 0 <Ref> { Bullet.verts } }
+      }
+      <Polygon> {
+        <RGBA> { 0.4 1 0 1 }
+        <VertexRef> { 4 5 6 <Ref> { Bullet.verts } }
+      }
+      <Polygon> {
+        <RGBA> { 0.4 1 0 1 }
+        <VertexRef> { 6 7 4 <Ref> { Bullet.verts } }
+      }
+      <Polygon> {
+        <RGBA> { 0.4 1 0 1 }
+        <VertexRef> { 8 9 10 <Ref> { Bullet.verts } }
+      }
+      <Polygon> {
+        <RGBA> { 0.4 1 0 1 }
+        <VertexRef> { 10 11 8 <Ref> { Bullet.verts } }
+      }
+      <Polygon> {
+        <RGBA> { 0.4 1 0 1 }
+        <VertexRef> { 12 13 14 <Ref> { Bullet.verts } }
+      }
+      <Polygon> {
+        <RGBA> { 0.4 1 0 1 }
+        <VertexRef> { 14 15 12 <Ref> { Bullet.verts } }
+      }
+      <Polygon> {
+        <RGBA> { 0.4 1 0 1 }
+        <VertexRef> { 16 17 18 <Ref> { Bullet.verts } }
+      }
+      <Polygon> {
+        <RGBA> { 0.4 1 0 1 }
+        <VertexRef> { 18 19 16 <Ref> { Bullet.verts } }
+      }
+      <Polygon> {
+        <RGBA> { 0.4 1 0 1 }
+        <VertexRef> { 20 21 22 <Ref> { Bullet.verts } }
+      }
+      <Polygon> {
+        <RGBA> { 0.4 1 0 1 }
+        <VertexRef> { 22 23 20 <Ref> { Bullet.verts } }
+      }
+    }
+  }
+}

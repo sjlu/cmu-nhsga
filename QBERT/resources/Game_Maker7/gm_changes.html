@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>What is New</title>
+</head>
+<body>
+
+<h1>What is New</h1>
+
+<p>
+Version 7.0 of <i>Game Maker</i> has a number of important changes over version 6.1. In particular
+there is a new extension mechanism. Below the most important changes are described.
+
+<h3>Incompatibilities</h3>
+
+<p>
+Version 7.0 uses an adapted file format. As a result file names now have the extension
+<tt>.gmk</tt>. The new version can though still read <tt>.gm6</tt> files created with the
+previous version and it is fully compatible with such files.
+
+<p>
+There is a minor incompatibility in the use of room transitions. In previous version transitions could
+also be used between frames in the same room. This is not longer possible. Transitions can only be
+used between rooms. But the number of transitions is considerably extended.
+
+<h3>Extension packages</h3>
+
+<p>
+The major improvement of version 7.0 of <i>Game Maker</i> is the mechanism of 
+extension packages that has been introduced. Extension packages can either add new
+collections of actions to <i>Game Maker</i> or they add new functions using 
+DLL or GML files. A new item has been added to the resource list in which the user 
+can indicate which extension packages to use. These are then automatically integrated 
+in the system. Actions are shown in the object form and functions are
+colorcoded in the script editor, show in the list of functions. Extension packages can
+have help files that are automatically included in the help menu. Also all required files 
+are automatically added to the game executables. 
+
+<p>
+Three extension package are default provided. 
+
+<p>
+<ul>
+<li>GM Printing. Adds a large number of functions for printing shapes, text, sprites, screenshots, etc.
+and contains dialogs to select the printer and set printer preferences.</li>
+<li>GM Transitions. Adds over 60 room transitions to the program.</li>
+<li>GM Windows Dialogs. Adds functions to create most of the standard Windows dialogs for messages,
+input boxes, file selection, etc.</li>
+</ul>
+
+<p>
+It is rather easy to create your own extension packages. There is a special
+program available for this.
+See the page
+<a href="http://www.yoyogames.com/extensions" target="_blank">http://www.yoyogames.com/extensions</a>
+for more information on how to do this.
+The extension mechanism sort of replaces and enhances the current DLL mechanism (which remains available).
+
+<h3>Publishing games</h3>
+
+<p>
+A publish button has been added to the toolbar. This will take you to our site were you can easily
+make your finished game available to the public.
+
+<h3>Splash screens</h3>
+
+<p>
+The splash screen mechanism has been considerably enhanced. Splash screens, like videos and images
+are now default shown in the main game window. There are many new options, e.g. to change the scaling.
+Also other image formats can be used. And rich text files can now contain images.
+
+<h3>Game information</h3>
+
+<p>
+The game information is now default shown in the game window and can be closed with the close button.
+
+
+<h3>Separate close button event</h3>
+
+<p>
+It can now be indicated whether or not the Close button must behave like the escape key or not.
+If not, there is a new event in the Other events that happens when the user clicks on the
+Close button. So you can now assign different behavior to the Close button and to the escape
+key.
+
+<h3>Room transitions</h3>
+
+<p>
+The room transition mechanism is changed and extended, giving you more control over the 
+transitions and adding many new transitions, like fade-ins, pushing the images, blending
+room images, rotations, etc. It is now even possible to define your own scripts to do the
+transitions (but this is rather advanced stuff). An extension package with additional room
+transitions is provided.
+
+<h3>Data structures</h3>
+
+<p>
+A number of additional functions have been provided to deal with data structures. For example,
+data structures can now be copied, there are functions to write data structures to a string
+and read them back. This string can then used to e.g. save the datastructure to a file. Also there
+are more functions for grid data structures to e.g. copy and add parts of grids.
+
+<h3>Including files</h3>
+
+<p>
+The mechanism to include files in the executables has been considerably extended. For each
+file it can now be indicated under what filename it must be stored and where it must be
+stored. There is a choice now whether or not to include the files in the editable
+version of the game. Also there are functions to export the files at a different moment
+than the start of the game.
+
+<h3>Adding sprites and backgrounds with alpha channel</h3>
+
+<p>
+There are now functions sprite_add_alpha() and sprite_replace_alpha() to add or replace
+a sprite from a file that has an alpha channel (such as png files) to get nicer transparancy
+effects. Similar functions exist for backgrounds.
+
+<h3>New registration mechanism</h3>
+
+<p>
+Version 7 uses a new registration mechanism. The free and registered version are now 
+called the Lite and Pro Edition. There is an improved online purchase process that
+immediately upgrades the program after the payment is made. Old version 5 and 6
+registration keys can be exchanged for version 7 activation codes.
+
+<h3>Other changes</h3>
+
+<p>
+There are a number of other changes and additions. Here are some of the important ones.
+
+<ul>
+  <li> The selected direction(s) in the Move Fixed action are now colored red.</li>
+  <li> When running a game the loading bar is shown considerably earlier such that
+       it is clear the game is running.</li>
+  <li> Renamed all actions for more easy reference (compatible with the book).</li>
+  <li> When adding or replacing sprites and backgrounds or when using splash images, many different file
+       formats can now be used, including jpg, tif, bmp, gif, png, etc.</li>
+  <li> In the image editor there now is a command (Ctrl-A) to select the whole image.</li>
+  <li> A toolbar button was added on the main form to save the game as stand-alone executable.</li>
+  <li> In the constants list in game settings, buttons were added to move them 
+       up or down in the list and to insert a constant above the current one.</li>
+  <li> Function message_position(-1,-1) now sets the message box to the screen center.</li>
+  <li> Print buttons were added in the script and code editor.</li>
+  <li> Save and print buttons were added to the debug info forms.</li>  
+  <li> Events were added that happen when an instance lies outside a view or intersects the view boundary.</li>
+  <li> The form showing errors in the game is enhanced and allows for copying them to the clipboard.</li>
+  <li> Functions random_set_seed(seed), random_get_seed(), and randomize() were added.</li>
+  <li> In the image editor you can now jump to next/prev subimage of a sprite.</li>
+  <li> Global variables can now be declared using the keyword globalvar. After this declaration
+       it is no longer necessary to add the word global and a dot in front of them.</li>
+  <li> During game play F9 now takes a screenshot unless this is switched off in the global game settings.</li>
+  <li> Added functions draw_line_width(x1,y1,x2,y2,w) and draw_line_width_color(x1,y1,x2,y2,w,col1,col2)
+       to draw lines with a width.</li> 
+  <li> d3d_start() and d3d_end() now return whether successful. </li>
+  <li> You can now set the variable cursor_sprite to automatically draw a sprite at the cursor location.</li>
+  <li> Increased the maximum number of arguments to DLL functions to 16.</li>
+  <li> In the options under Other you can now indicate version information for the game
+       that will be embedded in the executable.</li>
+  <li> Added functions sprite_save(ind,subimg,fname) and background_save(ind,fname) 
+       to save the resources as bitmaps.</li>
+  <li> Added a variable program_directory that stores the location of the game executable. </li>
+  <li> Added a constant c_orange.</li>
+  <li> ...</li>
+</ul>
+
+
+<h3>Corrected bugs</h3>
+
+<p>
+The following bugs were corrected.
+
+<ul>
+  <li> Solved the problem that sometimes led to corrupted files. Version 7 will read files
+       that were previously marked as being corrupt.</li>
+  <li> A problem with limited real precision was solved. This hould also solve problems with 
+       functions dealing with the date and time.</li> 
+  <li> A bug in timelines was corrected when duplicating to an earlier moment.</li>
+  <li> Bitwise assignments now work correctly and give no syntax errors.</li>
+  <li> show_message() actions and function now keep the box in the screen center.</li>
+  <li> Using snow effects and explosion effects together now works correctly.</li>
+  <li> A vulnerability to obtain information from a running game was removed.</li>
+  <li> Debug info forms no longer keep jumping to the top position.</li>
+  <li> Game Maker and the created games now work correctly under Windows Vista. As a result though
+       the file size of the games has been considerably increased.</li>
+  <li> When copying something in the code editor the font is now correct and color coding is applied.</li>
+  <li> Backgrounds no longer loose their settings when a new image is loaded.</li>
+  <li> An off-by-one error in drawing filled rectangles was solved.</li>
+  <li> The game window is now made visible before executing create events.</li>
+  <li> Solved a bug in the function median(). </li>
+  <li> Solved a crash when resizing a grid. </li>
+  <li> Comparing and finding values in grids now works correctly for string values.</li>
+  <li> Editing a non-transparent sprite will no longer sometimes turn it transparent in the preview.</li>
+  <li> Solved a bug in collision checking with scaled instances. </li>
+  <li> Solved a bug in collision checking with e.g. lines and rectangles that were not on integer coordinates. </li>
+  <li> Function file_bin_open now create the file if it does not yet exist. </li>
+  <li> Added checks in the object_set_parent function to avoid cycles. </li>
+  <li> Solved an error in the bounce action with diagonal bounces. </li>
+  <li> Corrected a bug in the rain effect when the room was higher than 1000 pixels.</li>
+  <li> Corrected a bug that instances without sprites would contstantly get Outside Room events. </li>
+  <li> Corrected a bug when dragging actions between Object and Timeline form (it is no longer possible). </li>
+  <li> Increase the minimal height of the background form to make it impossible to hide the OK button. </li>
+  <li> Corrected a bug with addressing variables in an instance after it changed object during the same step. </li>
+  <li> Corrected a bug that (de-)activating instances without a sprite could work wrong. </li>
+  <li> Corrected an error in drawing a path with 0 length. </li>
+  <li> Solved a bug that the Exit Event action inside a Repeat block did not exit the event. </li>
+  <li> Corrected the position of the loading bar for the game. </li>
+  <li> Corrected an error in removing instance outside a room in the room editor. </li>
+  <li> ...</li>
+</ul>
+
+
+</body>
+</html>

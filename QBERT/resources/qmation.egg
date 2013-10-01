@@ -1,0 +1,50 @@
+<CoordinateSystem> { Z-Up }
+
+<Comment> {
+  "MaxEggPlugin nul.max -a chan -o 'C:\Documents and Settings\etc-guest\Desktop\Animation.egg'"
+}
+<Table> {
+  <Bundle> {
+    <Table> "<skeleton>" {
+      <Table> BoneNode {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> p { <V> { -1.46888 } }
+          <S$Anim> r { <V> { -90 } }
+          <S$Anim> y { <V> { -0.00438601 } }
+          <S$Anim> z {
+            <V> {
+              0.0094364 0.00834574 0.00725508 0.146768 0.479452 0.876526
+              1.20921 1.34872 1.30633 1.1195 0.792998 0.430482 0.135628
+              0.0121052 0.00994592 0.0094364
+            }
+          }
+        }
+        <Table> Bone01 {
+          <Xfm$Anim_S$> xform {
+            <Scalar> fps { 30 }
+            <Char*> order { srpht }
+            <S$Anim> h {
+              <V> {
+                -0.472406 -11.0759 -21.6793 -18.1784 -9.64106 0.98491
+                10.7516 16.711 19.2321 20.7999 21.6401 21.9786 22.0413
+                -2.05674 -26.1548 -1.07017
+              }
+            }
+            <S$Anim> x { <V> { 0.173037 } }
+            <S$Anim> y { <V> { -0.327891 } }
+          }
+          <Table> BoneHead {
+            <Xfm$Anim_S$> xform {
+              <Scalar> fps { 30 }
+              <Char*> order { srpht }
+              <S$Anim> x { <V> { 0.0927823 } }
+              <S$Anim> y { <V> { 0.321074 } }
+            }
+          }
+        }
+      }
+    }
+  }
+}

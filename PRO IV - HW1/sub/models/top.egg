@@ -1,0 +1,52 @@
+<CoordinateSystem> { Z-Up }
+
+<Comment> {
+  "MaxEggPlugin nul.max -a model -o 'E:\NHSGA\projects\sub\models\top.egg'"
+}
+<Texture> Tex1 {
+  ripple.jpg
+  <Scalar> format { rgb }
+  <Scalar> wrapu { repeat }
+  <Scalar> wrapv { repeat }
+  <Scalar> minfilter { linear_mipmap_linear }
+  <Scalar> magfilter { linear }
+}
+<Group> enviro {
+  <Dart> { 1 }
+  <Group> "Scene Root" {
+    <Group> watersurface {
+      <VertexPool> watersurface.verts {
+        <Vertex> 0 {
+          -868.289 -826.33 569.82
+          <UV> { 0.000499755 0.999501 }
+          <Normal> { 0 -1.50996e-007 -1 }
+        }
+        <Vertex> 1 {
+          -868.289 741.803 569.82
+          <UV> { 0.000499517 0.000499755 }
+          <Normal> { 0 -1.50996e-007 -1 }
+        }
+        <Vertex> 2 {
+          894.545 -826.33 569.82
+          <UV> { 0.999501 0.9995 }
+          <Normal> { 0 -1.50996e-007 -1 }
+        }
+        <Vertex> 3 {
+          894.545 741.803 569.82
+          <UV> { 0.9995 0.000499517 }
+          <Normal> { 0 -1.50996e-007 -1 }
+        }
+      }
+      <Polygon> {
+        <RGBA> { 1 1 1 1 }
+        <TRef> { Tex1 }
+        <VertexRef> { 0 1 2 <Ref> { watersurface.verts } }
+      }
+      <Polygon> {
+        <RGBA> { 1 1 1 1 }
+        <TRef> { Tex1 }
+        <VertexRef> { 3 2 1 <Ref> { watersurface.verts } }
+      }
+    }
+  }
+}

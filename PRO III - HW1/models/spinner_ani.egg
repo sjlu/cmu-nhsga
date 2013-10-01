@@ -1,0 +1,24 @@
+<CoordinateSystem> { Z-Up }
+
+<Comment> {
+  "MaxEggPlugin nul.max -a chan -o 'C:\Documents and Settings\amckelve\Desktop\spinner\models\spinner_ani.egg'"
+}
+<Table> {
+  <Bundle> {
+    <Table> "<skeleton>" {
+      <Table> Bone01 {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 90 } }
+          <S$Anim> r {
+            <V> {
+              -90 -55 -20 16.9151 52.586 87.8431 123.716 161.193
+              -163.321 -125.6
+            }
+          }
+        }
+      }
+    }
+  }
+}

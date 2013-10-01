@@ -1,0 +1,35 @@
+<CoordinateSystem> { Z-Up }
+
+<Comment> {
+  "MaxEggPlugin nul.max -a chan 'D:\NHSGA\projects\sub\models\subAni.egg'"
+}
+<Table> {
+  <Bundle> sub {
+    <Table> "<skeleton>" {
+      <Table> Bone01 {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 90 } }
+          <S$Anim> r { <V> { -90 } }
+        }
+        <Table> Bone02 {
+          <Xfm$Anim_S$> xform {
+            <Scalar> fps { 30 }
+            <Char*> order { srpht }
+            <S$Anim> p {
+              <V> {
+                50 49.05 46.4 42.35 37.2 31.25 24.8 18.15 11.6 5.45
+                -2.74334e-022 -5.45 -11.6 -18.15 -24.8 -31.25 -37.2
+                -42.35 -46.4 -49.05 -50
+              }
+            }
+            <S$Anim> x { <V> { -9.98268 } }
+            <S$Anim> y { <V> { 197.697 } }
+            <S$Anim> z { <V> { -0.383813 } }
+          }
+        }
+      }
+    }
+  }
+}

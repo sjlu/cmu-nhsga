@@ -1,0 +1,40 @@
+<CoordinateSystem> { Z-Up }
+
+<Comment> {
+  "MaxEggPlugin nul.max -a model 'K:\panda\cave\models\card.egg'"
+}
+<Group> {
+  <Dart> { 1 }
+  <Group> "Scene Root" {
+    <Group> card {
+      <VertexPool> card.verts {
+        <Vertex> 0 {
+          -74.9873 -1.12799e-006 49.9915
+          <UV> { 0 1 }
+          <Normal> { 0 -0.195279 -8.53594e-009 }
+        }
+        <Vertex> 1 {
+          -74.9873 3.24241e-006 -49.9915
+          <UV> { 0 0 }
+          <Normal> { 0 -0.195279 -8.53594e-009 }
+        }
+        <Vertex> 2 {
+          74.9873 -1.12799e-006 49.9915
+          <UV> { 1 1 }
+          <Normal> { 0 -0.195279 -8.53594e-009 }
+        }
+        <Vertex> 3 {
+          74.9873 3.24241e-006 -49.9915
+          <UV> { 1 0 }
+          <Normal> { 0 -0.195279 -8.53594e-009 }
+        }
+      }
+      <Polygon> {
+        <VertexRef> { 0 1 2 <Ref> { card.verts } }
+      }
+      <Polygon> {
+        <VertexRef> { 3 2 1 <Ref> { card.verts } }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<CoordinateSystem> { Z-Up }
+
+<Comment> {
+  "MaxEggPlugin nul.max -a chan 'C:\Documents and Settings\etc-guest\Desktop\qbertAnimation.egg'"
+}
+<Table> {
+  <Bundle> qbert {
+    <Table> "<skeleton>" {
+      <Table> BoneNode {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> p { <V> { -1.46888 } }
+          <S$Anim> r { <V> { -90 } }
+          <S$Anim> y { <V> { -0.00438601 } }
+          <S$Anim> z { <V> { 0.0094364 } }
+        }
+        <Table> Bone01 {
+          <Xfm$Anim_S$> xform {
+            <Scalar> fps { 30 }
+            <Char*> order { srpht }
+            <S$Anim> h {
+              <V> {
+                -0.472406 -6.26336 -12.0543 -9.01476 -1.64137 7.448
+                15.6355 20.3031 21.9817 23.0413 23.6232 23.8687 23.9191
+                5.5153 -12.8885 -1.6708
+              }
+            }
+            <S$Anim> x { <V> { 0.173037 } }
+            <S$Anim> y { <V> { -0.327891 } }
+          }
+          <Table> BoneHead {
+            <Xfm$Anim_S$> xform {
+              <Scalar> fps { 30 }
+              <Char*> order { srpht }
+              <S$Anim> x { <V> { 0.0927823 } }
+              <S$Anim> y { <V> { 0.321074 } }
+            }
+          }
+        }
+      }
+    }
+  }
+}

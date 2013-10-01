@@ -1,0 +1,110 @@
+<CoordinateSystem> { Z-Up }
+
+<Comment> {
+  "MaxEggPlugin nul.max -a chan -o 'C:\Documents and Settings\etc-guest\Desktop\whackapanda\models\holes.egg'"
+}
+<Table> {
+  <Bundle> whack_a_creature_enviro {
+    <Table> "<skeleton>" {
+      <Table> Bone01 {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 90 } }
+          <S$Anim> r { <V> { -90 } }
+          <S$Anim> x { <V> { -243.242 } }
+          <S$Anim> y { <V> { -217.758 } }
+          <S$Anim> z { <V> { -60.5166 } }
+        }
+      }
+      <Table> Bone02 {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 90 } }
+          <S$Anim> r { <V> { -90 } }
+          <S$Anim> x { <V> { -0.621796 } }
+          <S$Anim> y { <V> { -217.758 } }
+          <S$Anim> z { <V> { -60.5166 } }
+        }
+      }
+      <Table> Bone03 {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 90 } }
+          <S$Anim> r { <V> { -90 } }
+          <S$Anim> x { <V> { 241.999 } }
+          <S$Anim> y { <V> { -217.758 } }
+          <S$Anim> z { <V> { -60.5166 } }
+        }
+      }
+      <Table> Bone04 {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 90 } }
+          <S$Anim> r { <V> { -90 } }
+          <S$Anim> x { <V> { 241.999 } }
+          <S$Anim> y { <V> { 1.31267 } }
+          <S$Anim> z { <V> { -60.5166 } }
+        }
+      }
+      <Table> Bone05 {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 90 } }
+          <S$Anim> r { <V> { -90 } }
+          <S$Anim> x { <V> { -0.621796 } }
+          <S$Anim> y { <V> { 1.31267 } }
+          <S$Anim> z { <V> { -60.5166 } }
+        }
+      }
+      <Table> Bone06 {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 90 } }
+          <S$Anim> r { <V> { -90 } }
+          <S$Anim> x { <V> { -243.242 } }
+          <S$Anim> y { <V> { 1.31267 } }
+          <S$Anim> z { <V> { -60.5166 } }
+        }
+      }
+      <Table> Bone07 {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 90 } }
+          <S$Anim> r { <V> { -90 } }
+          <S$Anim> x { <V> { 241.999 } }
+          <S$Anim> y { <V> { 220.383 } }
+          <S$Anim> z { <V> { -60.5166 } }
+        }
+      }
+      <Table> Bone08 {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 90 } }
+          <S$Anim> r { <V> { -90 } }
+          <S$Anim> x { <V> { -0.621796 } }
+          <S$Anim> y { <V> { 220.383 } }
+          <S$Anim> z { <V> { -60.5166 } }
+        }
+      }
+      <Table> Bone09 {
+        <Xfm$Anim_S$> xform {
+          <Scalar> fps { 30 }
+          <Char*> order { srpht }
+          <S$Anim> h { <V> { 90 } }
+          <S$Anim> r { <V> { -90 } }
+          <S$Anim> x { <V> { -243.242 } }
+          <S$Anim> y { <V> { 220.383 } }
+          <S$Anim> z { <V> { -60.5166 } }
+        }
+      }
+    }
+  }
+}

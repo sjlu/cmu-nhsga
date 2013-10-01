@@ -1,0 +1,52 @@
+import direct.directbase.DirectStart
+from pandac.PandaModules import NodePath
+from pandac.PandaModules import NodePath
+from direct.gui.DirectGui import *
+
+class World:
+    def __init__(self):
+        self.title = OnscreenText(
+        text="Sample Project #1: 7/2/07",
+        style=1, fg=(1,1,1,1), pos=(0.8,-0.95), scale = .1)
+        base.setBackgroundColor(0, 0, 0)
+#        camera.setPos ( 0, 0, 45 ) 
+#        camera.setHpr ( 0, -90, 0 )
+        self.sizescale = 0.3
+#        base.disableMouse()
+        self.loadObjects()
+
+    def loadObjects(self):
+        self.cube = loader.loadModel("blue.egg")
+        self.cube.reparentTo(render)
+        self.cube.setScale(0.3)
+        self.cube.setPos(0, 0, 0)
+        self.cube.setHpr(-5,-5,-5)
+        self.cube_texture = loader.loadTexture("earth_1k_tex.jpg")
+        self.cube.setTexture(self.cube_texture, 1)
+
+        self.cube2 = loader.loadModel("blue.egg")
+        self.cube2.reparentTo(render)
+        self.cube2.setScale(0.3)
+        self.cube2.setPos(5, 0, 0)
+        self.cube2.setHpr(-5,-5,-5)
+        self.cube2_texture = loader.loadTexture("sun_1k_tex.jpg")
+        self.cube2.setTexture(self.cube2_texture, 1)
+        
+        self.cube3 = loader.loadModel("blue.egg")
+        self.cube3.reparentTo(render)
+        self.cube3.setScale(0.3)
+        self.cube3.setPos(0, 5, 0)
+        self.cube3.setHpr(-5,-5,-5)
+        self.cube3_texture = loader.loadTexture("deimos_1k_tex.jpg")
+        self.cube3.setTexture(self.cube3_texture, 1)
+        
+        self.cube4 = loader.loadModel("blue.egg")
+        self.cube4.reparentTo(render)
+        self.cube4.setScale(0.3)
+        self.cube4.setPos(0, 0, 5)
+        self.cube4.setHpr(-5,-5,-5)
+        self.cube4_texture = loader.loadTexture("mars_1k_tex.jpg")
+        self.cube4.setTexture(self.cube4_texture, 1)
+        
+w = World()
+run()
